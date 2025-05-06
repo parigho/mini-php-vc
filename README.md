@@ -156,12 +156,65 @@ http://localhost/mini-php-mvc/public/about/index
 ### 404
 
 ```php
-
+<!-- app/views/404.php -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>404 Not Found</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 100px; }
+        .error-title { font-size: 48px; color: #FF6347; }
+        .error-message { font-size: 18px; color: #555; }
+        .btn {
+            padding: 10px 20px; background: #007BFF; color: white;
+            text-decoration: none; border-radius: 5px;
+        }
+        .btn:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1 class="error-title">404 - Page Not Found</h1>
+    <p class="error-message">Oops! The page you were looking for could not be found.</p>
+    <a href="/mini-php-mvc" class="btn">Back to Home</a>
+</body>
+</html>
+```
 
 ### 500
 
 ```php
+<!-- app/views/500.php -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>500 Internal Server Error</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 100px; }
+        .error-title { font-size: 48px; color: #cc0000; }
+        .error-message { font-size: 18px; color: #555; }
+        .btn {
+            padding: 10px 20px; background: #007BFF; color: white;
+            text-decoration: none; border-radius: 5px;
+        }
+        .btn:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1 class="error-title">500 - Internal Server Error</h1>
+    <p class="error-message">Something went wrong on the server.</p>
+    <a href="/mini-php-mvc" class="btn">Back to Home</a>
+</body>
+</html>
+```
 
 ---
 
-## 🙌
+## 🙌 Credits
+
+Built for educational purposes to demonstrate how MVC works in PHP without using frameworks like Laravel or CodeIgniter. Ideal for beginners who want to understand routing and MVC basics.
+
+---
+
+## 📃 License
+
+MIT License — Feel free to use, modify, and share.
